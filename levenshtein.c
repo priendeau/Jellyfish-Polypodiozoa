@@ -25,7 +25,7 @@
 };
 */
 
-struct jellyfish_ObjectReturn levenshtein_distance(const char *s1, const char *s2)
+PyObjPolypodiozoa* levenshtein_distance(const char *s1, const char *s2)
 {
   size_t s1_len = strlen(s1);
   size_t s2_len = strlen(s2);

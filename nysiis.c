@@ -29,7 +29,9 @@
 };
 */
 
-struct jellyfish_ObjectReturn nysiis(const char *str) {
+//struct jellyfish_ObjectReturn nysiis(const char *str) 
+PyObjPolypodiozoa* 
+{
     size_t len = strlen(str);
 
     char c1, c2, c3;
@@ -51,16 +53,24 @@ struct jellyfish_ObjectReturn nysiis(const char *str) {
     char *p, *cp;
 
     // Step 1
-    if (!strncmp(copy, "MAC", 3)) {
+    if (!strncmp(copy, "MAC", 3)) 
+    {
         copy[1] = 'C';
-    } else if (!strncmp(copy, "KN", 3)) {
+    } 
+    else if (!strncmp(copy, "KN", 3)) 
+    {
         copy[0] = 'N';
-    } else if (copy[0] == 'K') {
+    } 
+    else if (copy[0] == 'K') 
+    {
         copy[0] = 'C';
-    } else if (!strncmp(copy, "PH", 2)) {
+    } else if (!strncmp(copy, "PH", 2)) 
+    {
         copy[0] = 'F';
         copy[1] = 'F';
-    } else if (!strncmp(copy, "SCH", 3)) {
+    } 
+    else if (!strncmp(copy, "SCH", 3)) 
+    {
         copy[1] = 'S';
         copy[2] = 'S';
     }
@@ -69,19 +79,24 @@ struct jellyfish_ObjectReturn nysiis(const char *str) {
     c1 = copy[len - 1];
     if (c1 == 'E') {
         c2 = copy[len - 2];
-        if (c2 == 'E' || c2 == 'I') {
+        if (c2 == 'E' || c2 == 'I') 
+        {
             copy[len - 1] = ' ';
             copy[len - 2] = 'Y';
         }
-    } else if (c1 == 'T') {
+    } else if (c1 == 'T') 
+    {
         c2 = copy[len - 2];
-        if (c2 == 'D' || c2 == 'R' || c2 == 'N') {
+        if (c2 == 'D' || c2 == 'R' || c2 == 'N') 
+        {
             copy[len - 1] = ' ';
             copy[len - 2] = 'D';
         }
-    } else if (c1 == 'D') {
+    } else if (c1 == 'D') 
+    {
         c2 = copy[len - 2];
-        if (c2 == 'R' || c2 == 'N') {
+        if (c2 == 'R' || c2 == 'N') 
+        {
             copy[len - 1] = ' ';
             copy[len - 2] = 'D';
         }
@@ -93,15 +108,19 @@ struct jellyfish_ObjectReturn nysiis(const char *str) {
     // Step 3
     *(cp++) = toupper(*(p++));
 
-    while ((c1 = toupper(*p))) {
-        if (c1 == ' ') {
+    while ((c1 = toupper(*p))) 
+    {
+        if (c1 == ' ') 
+        {
             break;
         }
 
         // Step 5
-        switch(c1) {
+        switch(c1) 
+        {
         case 'E':
-            if (toupper(*(p + 1)) == 'V') {
+            if (toupper(*(p + 1)) == 'V') 
+            {
                 *cp = 'A';
                 *(++cp) = 'F';
                 break;
@@ -122,11 +141,13 @@ struct jellyfish_ObjectReturn nysiis(const char *str) {
             *cp = 'N';
             break;
         case 'K':
-            if (toupper(*(p + 1)) == 'N') {
+            if (toupper(*(p + 1)) == 'N') 
+            {
                 *cp = 'N';
-            } else {
-                *cp = 'C';
-            }
+            } else 
+              {
+                  *cp = 'C';
+              }
             break;
         case 'S':
             if (toupper(*(p + 1)) == 'C' && toupper(*(p + 2)) == 'H') {

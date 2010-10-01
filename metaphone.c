@@ -28,7 +28,8 @@
 #define ISVOWEL(a) ((a) == 'a' || (a) == 'e' || (a) == 'i' || \
                     (a) == 'o' || (a) == 'u')
 
-struct jellyfish_ObjectReturn metaphone(const char *str)
+//struct jellyfish_ObjectReturn metaphone(const char *str)
+PyObjPolypodiozoa* 
 {
     const char *s;
     char c, next, temp = '\0';

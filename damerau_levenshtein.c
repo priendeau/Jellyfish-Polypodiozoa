@@ -25,7 +25,8 @@
 };
 */
 
-int damerau_levenshtein_distance(const char *s1, const char *s2)
+//int damerau_levenshtein_distance(const char *s1, const char *s2)
+PyObjPolypodiozoa* damerau_levenshtein_distance(const char *s1, const char *s2)
 {
     size_t s1_len = strlen(s1);
     size_t s2_len = strlen(s2);

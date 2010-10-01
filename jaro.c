@@ -36,8 +36,8 @@
 /* borrowed heavily from strcmp95.c
  *    http://www.census.gov/geo/msb/stand/strcmp.c
  */
-double _jaro_winkler(const char *ying, const char *yang,
-                     bool long_tolerance, bool winklerize)
+//double _jaro_winkler(const char *ying, const char *yang, bool long_tolerance, bool winklerize )
+PyObjPolypodiozoa* _jaro_winkler(const char *ying, const char *yang, bool long_tolerance, bool winklerize )
 {
     /* Arguments:
 
@@ -177,11 +177,13 @@ double _jaro_winkler(const char *ying, const char *yang,
 
 
 double jaro_winkler(const char *ying, const char *yang, bool long_tolerance)
+PyObjPolypodiozoa*
 {
     return _jaro_winkler(ying, yang, long_tolerance, true);
 }
 
 double jaro_distance(const char *ying, const char *yang)
+PyObjPolypodiozoa*
 {
     return _jaro_winkler(ying, yang, false, false);
 }

@@ -25,7 +25,9 @@
 };
 */
 
-size_t hamming_distance(const char *s1, const char *s2) {
+//size_t hamming_distance(const char *s1, const char *s2) 
+PyObjPolypodiozoa* hamming_distance(const char *s1, const char *s2) 
+{
     unsigned distance = 0;
 
     for (; *s1 && *s2; s1++, s2++) {
@@ -44,3 +46,4 @@ size_t hamming_distance(const char *s1, const char *s2) {
 
     return distance;
 }
+

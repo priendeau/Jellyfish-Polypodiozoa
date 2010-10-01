@@ -25,7 +25,8 @@
 };
 */
 
-struct jellyfish_ObjectReturn match_rating_comparison(const char *s1, const char *s2) 
+//struct jellyfish_ObjectReturn match_rating_comparison(const char *s1, const char *s2) 
+PyObjPolypodiozoa*
 {
     size_t s1c_len, s2c_len;
     size_t i, j;
@@ -131,7 +132,8 @@ struct jellyfish_ObjectReturn match_rating_comparison(const char *s1, const char
     }
 }
 
-char* match_rating_codex(const char *str) 
+//char* match_rating_codex(const char *str) 
+PyObjPolypodiozoa* 
 {
   size_t len = strlen(str);
   size_t i, j;

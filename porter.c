@@ -31,6 +31,31 @@
    regarded as release 1.)
 */
 
+/*
+ * struct jellyfish_ObjectReturn 
+{
+    //* ANSI C/C++ Variable requirement 
+    double          DoubleResultReturn ;
+    int             IntResultReturn ;
+    char*           StringReturn ;
+    // Python Variable requirement 
+    PyObject        *ObjectErrorReturn ; 
+    // Ruby Variable requirement 
+    unsigned long   RubyValue ;
+    unsigned long   RubyID ;
+    char            *StringValuePtr ;
+    char            *ConstStringValue ;
+    struct RBasic   RubyBasicType  ;
+    struct RObject  RubyObjectType ;
+    struct RClass   RubyClassType  ;
+    struct RFloat   RubyFloatType  ;
+    struct RString  RubyStringType ;
+    struct RArray   RubyArrayType  ;
+    struct RRegexp  RubyRegexpType ;
+    struct RHash    RubyHashType   ;
+};
+*/
+
 #include "jellyfishheader.h"
 
 /* You will probably want to move the following declarations to a central
@@ -55,12 +80,12 @@ extern int stem( struct stemmer * z, char * b, int k );
 /* stemmer is a structure for a few local bits of data,
 */
 
-struct stemmer 
-{
-   char *b;         /*  buffer for word to be stemmed      */
-   int  k;          /*  offset to the end of the string    */
-   int  j;          /*  a general offset into the string   */
-};
+//struct stemmer 
+//{
+//   char *b;         /*  buffer for word to be stemmed      */
+//   int  k;          /*  offset to the end of the string    */
+//   int  j;          /*  a general offset into the string   */
+//};
 
 
 /* Member b is a buffer holding a word to be stemmed. The letters are in
@@ -83,13 +108,14 @@ struct stemmer
 */
 
 
-extern struct stemmer * create_stemmer(void)
+//extern struct stemmer * create_stemmer(void)
+jellyfish_ObjectReturn* create_stemmer(void)
 {
-    return (struct stemmer *) malloc(sizeof(struct stemmer));
+    return ( jellyfish_ObjectReturn.PorterStemmer* ) malloc(sizeof( jellyfish_ObjectReturn.PorterStemmer ));
     /* assume malloc succeeds */
 }
 
-extern void free_stemmer(struct stemmer * z)
+extern void free_stemmer( jellyfish_ObjectReturn.PorterStemmer* z)
 {
   free(z);
 }
@@ -99,7 +125,7 @@ extern void free_stemmer(struct stemmer * z)
    and below we drop 'z->' in comments.
 */
 
-static int cons(struct stemmer * z, int i)
+static int cons(jellyfish_ObjectReturn.PorterStemmer* z, int i)
 {  
   bool BoolRetVal = FALSE ; 
    switch ( z -> b[i] )
@@ -125,7 +151,7 @@ static int cons(struct stemmer * z, int i)
       ....
 */
 
-static int m(struct stemmer * z)
+static int m(jellyfish_ObjectReturn.PorterStemmer* z)
 {  int n = 0;
    int i = 0;
    int j = z->j;
@@ -163,7 +189,7 @@ static int m(struct stemmer * z)
 
 /* vowelinstem(z) is TRUE <=> 0,...j contains a vowel */
 
-static int vowelinstem(struct stemmer * z)
+static int vowelinstem(jellyfish_ObjectReturn.PorterStemmer* z)
 {
    int j = z->j;
    int i; 

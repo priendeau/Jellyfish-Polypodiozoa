@@ -46,4 +46,13 @@ struct jellyfish_ObjectReturn
     struct RArray   RubyArrayType  ;
     struct RRegexp  RubyRegexpType ;
     struct RHash    RubyHashType   ;
+    struct PorterStemmer 
+    {
+       char *b;         /*  buffer for word to be stemmed      */
+       int  k;          /*  offset to the end of the string    */
+       int  j;          /*  a general offset into the string   */
+    };
+
 };
+
+typedef static struct jellyfish_ObjectReturn PyObjPolypodiozoa ;
