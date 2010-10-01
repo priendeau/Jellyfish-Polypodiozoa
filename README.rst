@@ -2,7 +2,7 @@
         Jellyfish-Polypodiozoa
         =========
         
-        Agrred <jturk@sunlightfoundation.com> his the superclass from Jellyfish, the 
+        Agreed <jturk@sunlightfoundation.com> his the superclass from Jellyfish, the 
         Polypodiozoa, are not only parasite attacking the eggs of sturgeon and similar fishes
         <sup><< citation from wikipedia >></sup>, but a muted-mechanism based on structure enhancement
         from conventional C-Syntax, prior-migration to C++ for Demonstration purposes. 
