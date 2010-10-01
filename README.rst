@@ -1,49 +1,49 @@
-        =========
-        Jellyfish-Polypodiozoa
-        =========
-        
-        Agrred <jturk@sunlightfoundation.com> his the superclass from Jellyfish, the 
-        Polypodiozoa, are not only parasite attacking the eggs of sturgeon and similar fishes
-        <sup><< citation from wikipedia >></sup>, but a muted-mechanism based on structure enhancement
-        from conventional C-Syntax, prior-migration to C++ for Demonstration purposes. 
-        
-        Jellyfish-Polypodiozoa, is a genomic class with embedded stucture ( not really comming
-        with neurotase ( a.k.a garbage callection ), but better transmission of information thru
-        Structure syntax and error handling... 
-        
-        I offer my congratulation to the «Sunlight Labs (c) 2010» for recovering this work
-        already used in the past, and probably see something more inportant like working with
-        capital-word module to introduce semantic dissection... While I should consider using 
-        this portion with « other module »...
-        
-        All code is released under a BSD-style license, see LICENSE for details.
-        
-        re-Written by Maxiste Deams, Patrick Riendeau, Rheault Etccy, <rheault.etccy@gmail.com>
-        .
-        
-        Source is available at git://github.com/priendeau/Jellyfish-Polypodiozoa.git.
-        
-        Included Algorithms
-        ===================
-        
-        String comparison:
-        
-          * Levenshtein Distance
-          * Damerau-Levenshtein Distance
-          * Jaro Distance
-          * Jaro-Winkler Distance
-          * Match Rating Approach Comparison
-          * Hamming Distance
-        
-        Phonetic encoding:
-        
-          * American Soundex
-          * Metaphone
-          * NYSIIS (New York State Identification and Intelligence System)
-          * Match Rating Codex
-        
-        Example Usage
-        =============
-        
-        >>> import JellyfishPolypodiozoa
-        """ Future example are comming soon """
+  =========
+  Jellyfish-Polypodiozoa
+  =========
+  
+  Agreed <jturk@sunlightfoundation.com> his the superclass from Jellyfish, the 
+  Polypodiozoa, are not only parasite attacking the eggs of sturgeon and similar fishes
+  <sup><< citation from wikipedia >></sup>, but a muted-mechanism based on structure enhancement
+  from conventional C-Syntax, prior-migration to C++ for Demonstration purposes. 
+  
+  Jellyfish-Polypodiozoa, is a genomic class with embedded stucture ( not really comming
+  with neurotase ( a.k.a garbage callection ), but better transmission of information thru
+  Structure syntax and error handling... 
+  
+  I offer my congratulation to the «Sunlight Labs (c) 2010» for recovering this work
+  already used in the past, and probably see something more inportant like working with
+  capital-word module to introduce semantic dissection... While I should consider using 
+  this portion with « other module »...
+  
+  All code is released under a BSD-style license, see LICENSE for details.
+  
+  re-Written by Maxiste Deams, Patrick Riendeau, Rheault Etccy, <rheault.etccy@gmail.com>
+  .
+  
+  Source is available at git://github.com/priendeau/Jellyfish-Polypodiozoa.git.
+  
+  Included Algorithms
+  ===================
+  
+  String comparison:
+  
+    * Levenshtein Distance
+    * Damerau-Levenshtein Distance
+    * Jaro Distance
+    * Jaro-Winkler Distance
+    * Match Rating Approach Comparison
+    * Hamming Distance
+  
+  Phonetic encoding:
+  
+    * American Soundex
+    * Metaphone
+    * NYSIIS (New York State Identification and Intelligence System)
+    * Match Rating Codex
+  
+  Example Usage
+  =============
+  
+  >>> import JellyfishPolypodiozoa
+  """ Future example are comming soon """
