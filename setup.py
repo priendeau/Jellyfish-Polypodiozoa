@@ -17,8 +17,9 @@ setup(name="jellyfish",
                    "Operating System :: OS Independent",
                    "Programming Language :: Python",
                    "Topic :: Text Processing :: Linguistic"],
-      ext_modules=[Extension("jellyfish", ['jellyfishmodule.c', 'jaro.c',
-                                           'hamming.c', 'levenshtein.c',
-                                           'damerau_levenshtein.c', 'mra.c',
-                                           'soundex.c', 'metaphone.c',
-                                           'nysiis.c', 'porter.c'])])
+      ext_modules=[
+        Extension("jellyfish", ['jellyfishmodule.c']),
+        Extension('_jellyfishheader', ['jellyfishheader.i'] , swig_opts=['-modern', '-I /usr/include']),
+        Extension('_jellyfishmodule', ['jellyfishmodule.i'] , swig_opts=['-modern', '-I /usr/include'])
+        ]
+)
