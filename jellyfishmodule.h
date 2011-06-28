@@ -8,7 +8,7 @@
 
 
 
-static struct PyModuleDef moduledef = 
+static struct PyModuleDef
 {
     PyModuleDef_HEAD_INIT,
     "strfry",
@@ -23,9 +23,9 @@ static struct PyModuleDef moduledef =
 
 static bool BooleanPythonTest( int IntTest ) ;
 
-static inline PyObject* normalize( PyObject *mod, PyObject *pystr) 
+static inline PyObject* normalize( PyObject *mod, PyObject *pystr) ;
 
-static bool BooleanPythonTest( int IntTest )
+static bool BooleanPythonTest( int IntTest ) ;
 
 static PyObject* jellyfish_jaro_winkler( PyObject *self, PyObject *args, PyObject *keywds ) ;
 
