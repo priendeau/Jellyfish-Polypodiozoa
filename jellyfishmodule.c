@@ -408,8 +408,8 @@ PyMODINIT_FUNC initjellyfish(void)
     PyObject *unicodedata;
     int IntModuleCacheCommand ;
     const char *ModuleCache[3] = [ "import GenericCache", 
-                                  "from GenericCache.decorators import cached", 
-                                  "from GenericCache.GenericCache import GenericCache" ] ;
+                                   "from GenericCache.decorators import cached", 
+                                   "from GenericCache.GenericCache import GenericCache" ] ;
     
 
 #if PY_MAJOR_VERSION >= 3
