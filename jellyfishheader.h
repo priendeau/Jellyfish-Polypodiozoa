@@ -1,5 +1,8 @@
 #include <Python.h>
+
+#if __HAVE_RUBY_DEV_PACKAGE__
 #include <ruby.h>
+#endif 
 
 #define PyStreamStringType    "ss"
 #define PyAnsiStringType      "s0"
@@ -38,6 +41,8 @@ struct jellyfish_ObjectReturn
     unsigned long   RubyID ;
     char            *StringValuePtr ;
     char            *ConstStringValue ;
+#if __HAVE_RUBY_DEV_PACKAGE__
+
     struct RBasic   RubyBasicType  ;
     struct RObject  RubyObjectType ;
     struct RClass   RubyClassType  ;
@@ -46,6 +51,7 @@ struct jellyfish_ObjectReturn
     struct RArray   RubyArrayType  ;
     struct RRegexp  RubyRegexpType ;
     struct RHash    RubyHashType   ;
+#endif
     struct PorterStemmer 
     {
        char *b;         /*  buffer for word to be stemmed      */
@@ -55,4 +61,4 @@ struct jellyfish_ObjectReturn
 
 };
 
-typedef static struct jellyfish_ObjectReturn PyObjPolypodiozoa ;
+typedef jellyfish_ObjectReturn PyObjPolypodiozoa ;
