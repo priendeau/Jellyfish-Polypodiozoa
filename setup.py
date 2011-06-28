@@ -3,12 +3,12 @@ from setuptools import setup, Extension
 
 long_description = open('README.rst').read()
 
-setup(name="jellyfish",
+setup(name="Jellyfish-Polypodiozoa",
       version="0.1.2a",
       platforms=["any"],
       description=("a library for doing approximate and "
                    "phonetic matching of strings."),
-      url="http://github.com/sunlightlabs/jellyfish",
+      url="https://github.com/priendeau/Jellyfish-Polypodiozoa",
       long_description=long_description,
       classifiers=["Development Status :: 4 - Beta",
                    "Intended Audience :: Developers",
