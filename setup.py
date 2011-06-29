@@ -18,8 +18,16 @@ setup(name="Jellyfish-Polypodiozoa",
                    "Programming Language :: Python",
                    "Topic :: Text Processing :: Linguistic"],
       ext_modules=[
-        Extension("jellyfish", ['jellyfishmodule.c']),
-        Extension('_jellyfishheader', ['jellyfishheader.i'] , swig_opts=['-modern', '-I /usr/include']),
-        Extension('_jellyfishmodule', ['jellyfishmodule.i'] , swig_opts=['-modern', '-I /usr/include'])
+        Extension('jellyfish', 
+                    ['jellyfishmodule.c'], 
+                    include_dirs=[''] ),
+        Extension('_jellyfishheader', 
+                  ['jellyfishheader.i'] , 
+                  swig_opts=['-modern'], 
+                  include_dirs=['/usr/include'] ),
+        Extension('_jellyfishmodule', 
+                  ['jellyfishmodule.i'] , 
+                  swig_opts=['-modern'], 
+                  include_dirs=['/usr/include'])
         ]
 )
